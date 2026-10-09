@@ -4,7 +4,7 @@ require "digest"
 cask_path = Pathname.new(__dir__).parent/"Casks/burnline.rb"
 cask = Cask::CaskLoader.load(cask_path)
 checks = {
-  "version is pinned" => cask.version.to_s == "1.0.0",
+  "version is pinned" => cask.version.to_s == "1.1.0",
   "download belongs to this repository and version" =>
     cask.url.to_s == "https://github.com/52Hertzzzzz/homebrew-tap/releases/download/v#{cask.version}/Burnline-#{cask.version}-arm64.dmg",
   "download has a real SHA-256" => cask.sha256.to_s.match?(/\A[0-9a-f]{64}\z/),

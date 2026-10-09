@@ -13,7 +13,7 @@ brew install --cask 52Hertzzzzz/tap/burnline
 open -a Burnline
 ```
 
-直接下载安装包：[Burnline 1.0.0 · Apple Silicon](https://github.com/52Hertzzzzz/homebrew-tap/releases/download/v1.0.0/Burnline-1.0.0-arm64.dmg)。打开 DMG，把 Burnline 拖进「应用程序」。
+直接下载安装包：[Burnline 1.1.0 · Apple Silicon](https://github.com/52Hertzzzzz/homebrew-tap/releases/download/v1.1.0/Burnline-1.1.0-arm64.dmg)。打开 DMG，把 Burnline 拖进「应用程序」。
 
 当前版本为组内试用版，仅提供 Apple Silicon（M 系列）Mac 安装包。应用要求 macOS 12 或以上；使用 Homebrew 时还需满足你所安装的 Homebrew 版本要求。Intel Mac 和 Windows 尚未验收。
 
@@ -25,7 +25,7 @@ open -a Burnline
 
 ## 连接账号
 
-- 腾讯、OpenCode Go：使用你自己在 Microsoft Edge 中的登录态，在应用里点击「连接」，按提示完成登录。
+- 腾讯、OpenCode Go：使用你自己在 Google Chrome 或 Microsoft Edge 中的登录态，在应用里点击「连接」。优先沿用上次成功的浏览器；首次优先受支持的默认浏览器，默认是 Safari 时使用 Edge（仅装 Chrome 则用 Chrome）。Safari 登录态尚不支持。
 - Codex：需要你自己的 Codex 登录及兼容的 Codex CLI。
 - 用量记录和账号状态保留在你的电脑；安装包不包含发布者的本机记录或登录数据。
 - 续航按本地观测与历史习惯预估。首次没有可比消耗历史时，不能仅凭余额推导可靠的烧速。
@@ -64,7 +64,7 @@ Homebrew 可能提示 `/Applications/Burnline.app` 已存在。先退出应用�
 
 ```bash
 brew audit --cask --strict 52Hertzzzzz/tap/burnline
-brew ruby "$(brew --repository 52Hertzzzzz/tap)/test/cask_test.rb" /path/to/Burnline-1.0.0-arm64.dmg
+brew ruby "$(brew --repository 52Hertzzzzz/tap)/test/cask_test.rb" /path/to/Burnline-1.1.0-arm64.dmg
 ```
 
 完整公开发行仍需完成 Developer ID 签名、Apple 公证，以及另一台电脑上从下载到首次登录的验收。
