@@ -13,7 +13,7 @@ brew install --cask 52Hertzzzzz/tap/burnline
 open -a Burnline
 ```
 
-直接下载安装包：[Burnline 1.1.1 · Apple Silicon](https://github.com/52Hertzzzzz/homebrew-tap/releases/download/v1.1.1/Burnline-1.1.1-arm64.dmg)。打开 DMG，把 Burnline 拖进「应用程序」。
+直接下载安装包：[Burnline 1.1.2 · Apple Silicon](https://github.com/52Hertzzzzz/homebrew-tap/releases/download/v1.1.2/Burnline-1.1.2-arm64.dmg)。打开 DMG，把 Burnline 拖进「应用程序」。
 
 当前版本为组内试用版，仅提供 Apple Silicon（M 系列）Mac 安装包。应用要求 macOS 12 或以上；使用 Homebrew 时还需满足你所安装的 Homebrew 版本要求。Intel Mac 和 Windows 尚未验收。
 
@@ -64,7 +64,7 @@ Homebrew 可能提示 `/Applications/Burnline.app` 已存在。先退出应用�
 
 ```bash
 brew audit --cask --strict 52Hertzzzzz/tap/burnline
-brew ruby "$(brew --repository 52Hertzzzzz/tap)/test/cask_test.rb" /path/to/Burnline-1.1.1-arm64.dmg
+brew ruby "$(brew --repository 52Hertzzzzz/tap)/test/cask_test.rb" /path/to/Burnline-1.1.2-arm64.dmg
 ```
 
 完整公开发行仍需完成 Developer ID 签名、Apple 公证，以及另一台电脑上从下载到首次登录的验收。
