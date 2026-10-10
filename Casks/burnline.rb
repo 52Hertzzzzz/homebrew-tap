@@ -1,6 +1,6 @@
 cask "burnline" do
-  version "1.1.0"
-  sha256 "46d5e6323df9726754398ec16dd144ff2fbadb53abc8ecfa9b08772cc2f0896b"
+  version "1.1.1"
+  sha256 "5c178210e5eb4350eb07fd4987d60722ad4511e5d87cc97d192ebd7e7072547e"
 
   url "https://github.com/52Hertzzzzz/homebrew-tap/releases/download/v#{version}/Burnline-#{version}-arm64.dmg"
   name "Burnline"
